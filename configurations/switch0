@@ -34,7 +34,6 @@ SW0(config-if-range)#int r fa0/3-4
 SW0(config-if-range)#switchport mode access 
 SW0(config-if-range)#switchport access vlan 20
 SW0(config-if-range)#exit
-SW0(config)#group
 SW0(config)#int r fa0/11-12
 SW0(config-if-range)#channel-group 1 mode active 
 SW0(config-if-range)#
