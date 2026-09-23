@@ -28,12 +28,6 @@ SW3(config)#vlan 10
 SW3(config-vlan)#name Users
 SW3(config-vlan)#vlan 20
 SW3(config-vlan)#name Servers
-SW3(config-vlan)#vlan 30
-SW3(config-vlan)#name Management
-SW3(config-vlan)#int t fa0/1-2
-                 ^
-% Invalid input detected at '^' marker.
-	
 SW3(config-vlan)#int r fa0/1-2
 SW3(config-if-range)#switchport mode access 
 SW3(config-if-range)#switchport access vlan 10
