@@ -1,3 +1,13 @@
+Router>en
+Router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#hostname R3
+R3(config)#ip domain-name enterprise.local
+R3(config)#enable secret cisco
+R3(config)#username cisco privilege 15 secret cisco
+R3(config)#service password-encryption 
+R3(config)#line console 0
+R3(config-line)#login local
 R3(config-line)#logging synchronous 
 R3(config-line)#exec-timeout 10 0
 R3(config-line)#exit
