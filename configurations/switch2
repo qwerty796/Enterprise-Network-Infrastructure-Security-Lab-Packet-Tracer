@@ -53,4 +53,12 @@ SW2(config-if-range)#exit
 SW2(config)#int port-channel 2
 SW2(config-if)#switchport mode trunk 
 SW2(config-if)#switchport trunk allowed vlan 10,20
-SW2(config-if)#do wr
+SW2(config-if)#exit
+SW2(config)#int g0/1
+SW2(config-if)#switchport mode trunk 
+SW2(config-if)#switchport trunk allowed vlan 10,20,30,40
+SW2(config-if)#no sh
+SW2(config-if)#int g0/2
+SW2(config-if)#switchport mode trunk 
+SW2(config-if)#switchport trunk allowed vlan 10,20,30,40
+SW2(config-if)#no sh
